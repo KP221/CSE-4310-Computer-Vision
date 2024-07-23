@@ -1,0 +1,28 @@
+{
+    "autoDocstring.docstringFormat": "pep257",
+    "flake8.importStrategy": "fromEnvironment",
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "mypy-type-checker.args": [
+        "--config-file=pyproject.toml"
+    ],
+    "mypy-type-checker..path": [
+        "poetry",
+        "run",
+        "mypy"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.tabSize": 4,
+        "editor.rulers": [
+            100,
+            150
+        ],
+    },
+    "[toml]": {
+        "editor.tabSize": 4,
+    },
+}
